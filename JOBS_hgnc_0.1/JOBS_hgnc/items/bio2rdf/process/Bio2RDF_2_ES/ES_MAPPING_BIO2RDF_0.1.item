@@ -3,13 +3,13 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="index" prompt="index?" promptNeeded="false" type="id_String" value="ncbigene"/>
     <contextParameter comment="" name="type" prompt="type?" promptNeeded="false" type="id_String" value="resource"/>
-    <contextParameter comment="" name="hostES" prompt="hostES?" promptNeeded="false" type="id_String" value="m.bio2rdf.org"/>
+    <contextParameter comment="" name="hostES" prompt="hostES?" promptNeeded="false" type="id_String" value="louiscyr.bio2rdf.org"/>
     <contextParameter comment="" name="hostES1" prompt="hostES1?" promptNeeded="false" type="id_String" value="vps77060.vps.ovh.ca:8080"/>
     <contextParameter comment="" name="hostES2" prompt="hostES2?" promptNeeded="false" type="id_String" value="null"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="640"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="100"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="644"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>

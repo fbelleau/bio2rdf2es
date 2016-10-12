@@ -5,7 +5,7 @@
     <contextParameter comment="" name="limit" prompt="limit?" promptNeeded="false" type="id_String" value="100"/>
     <contextParameter comment="" name="namespace" prompt="namespace?" promptNeeded="false" type="id_String" value="ncbigene"/>
     <contextParameter comment="" name="debug" prompt="debug?" promptNeeded="false" type="id_Boolean" value="true"/>
-    <contextParameter comment="" name="hostES" prompt="hostES?" promptNeeded="false" type="id_String" value="m.bio2rdf.org"/>
+    <contextParameter comment="" name="hostES" prompt="hostES?" promptNeeded="false" type="id_String" value="louiscyr.bio2rdf.org"/>
     <contextParameter comment="" name="hostES1" prompt="hostES1?" promptNeeded="false" type="id_String" value="vps62579.vps.ovh.ca:8080"/>
     <contextParameter comment="" name="hostES2" prompt="hostES2?" promptNeeded="false" type="id_String" value="vps77060.vps.ovh.ca:8080"/>
     <contextParameter comment="" name="hostSparql" prompt="hostSparql?" promptNeeded="false" type="id_String" value="bio2rdf.org"/>
@@ -487,14 +487,14 @@
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;http://www.w3.org/2002/07/owl#&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;owl_&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;rdf_&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
@@ -515,21 +515,21 @@
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;http://purl.org/dc/terms/&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;terms_&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;bio2rdf_vocabulary:&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;bm_&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
-      <elementValue elementRef="SEARCH_PATTERN" value="&quot;_vocabulary:&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;_&quot;"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="context.namespace+&quot;_vocabulary:&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
@@ -543,7 +543,7 @@
       <elementValue elementRef="COMMENT" value=""/>
       <elementValue elementRef="INPUT_COLUMN" value="rdf"/>
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;http://identifiers.org/&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;identifiers_&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;identifiers:&quot;"/>
       <elementValue elementRef="WHOLE_WORD" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="USE_GLOB" value="false"/>
@@ -731,6 +731,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true"/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/francois/Program/TOS_DI-20141024_1545-V5.6.0/configuration/lib/java"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
